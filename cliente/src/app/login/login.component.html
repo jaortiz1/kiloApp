@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>¡Login!</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<h1>CAMPAÑAS SALESIANOS DE TRIANA</h1><br /><br />
+<div>
+  <mat-form-field class="example-full-width">
+    <input type="email" matInput placeholder="email" [(ngModel)]="email">
+  </mat-form-field><br>
+  <mat-form-field class="example-full-width">
+    <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+  </mat-form-field><br>
+  <mat-checkbox>Recordar contraseña</mat-checkbox><br><br><br>
+  <button mat-raised-button color="primary" (click)="doLogin()">Log in</button><br /><br />
+  <span>¿Aún no tienes cuenta? <a routerLink="[ '/registro' ]">¡Regístrate aquí!</a></span>
+</div>
